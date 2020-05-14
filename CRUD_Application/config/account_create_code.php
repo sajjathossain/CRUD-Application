@@ -12,7 +12,7 @@
             $accName = mysqli_real_escape_string($conn,$_POST['acc_name']);
             $pwd = mysqli_real_escape_string($conn,$_POST['acc_pass']); 
             $accPassAgain = mysqli_real_escape_string($conn,$_POST['acc_pass_again']);
-            $user_name = mysqli_real_escape_string($conn,strtolower($conn,$_POST['Uname']));
+            $user_name = mysqli_real_escape_string($conn,strtolower($_POST['Uname']));
 
             
             # Checking for same contact name! 
